@@ -3,4 +3,8 @@ Rails.application.routes.draw do
 
   # Defines the root path route ("/")
   # root "articles#index"
+  get 'ask', to: 'questions#ask'
+
+  # Defines the "answer" route
+  get 'answer', to: 'questions#answer'
 end

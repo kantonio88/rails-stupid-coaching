@@ -1,0 +1,7 @@
+<h1>Ask a Question</h1>
+<form action="<%= url_for(controller: 'question', action: 'answer') %>" data-turbo="false">
+  <label for="question">Enter your question:</label>
+  <input type="text" id="question" name="question">
+  <br>
+  <button type="submit">Ask!</button>
+</form>
